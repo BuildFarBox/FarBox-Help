@@ -1,0 +1,5 @@
+template/.idea/*
+template/*
+.idea/*
+site.txt
+*.pdf

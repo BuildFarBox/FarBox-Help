@@ -1,0 +1,48 @@
+Date: 2014-06-12 15:54:30
+url: wiki-generator
+position: 1
+title: Personal Wiki Template
+
+## Personal Wiki
+
+Sometimes, we need to archive and review our knowledeg, then the Wiki would be a nice tool to do it.
+
+But it's not a easy job to install a Wiki application, and always brings some inconvenient.
+
+If we can keep the experience of writing with FarBox to manage your own Wiki, that would be amazing.
+
+So we try to do it by the template API of FarBox, just about 10 lines codes!
+
+> Of course, you should have some direcotries and documents under your site, otherwise, what you can see are just blank pages..
+
+
+
+## Source Code
+
+In order to reflect the template code (in Jade syntax) more directly and clearly, so tags like `html/head/body` are ignored, and no stylesheet (css/scss) files  either.
+
+> index+category.jade, then it controls the homepage and the URLs like `/category/<direcotry_path>`.
+```jade:n
+if request.path == '/category/'
+	+redirect('/')
+entries = get_data(type='post', path=path2, limit=300).group('parent_raw_path')
+for parent_raw_path, posts in entries
+	if parent_raw_path
+		h2= parent_raw_path.split('/')[-1]
+	else
+		h2 Root
+	ul
+		for post in posts
+			li
+				a(href=post.url)= post.title
+```
+
+> post.jade
+
+```jade:n
+.nav
+	+bread_nav(post.raw_path.split('/')[1:].join('/'), prefix='/category/')
+.post
+	h1.title= post.title
+	.content= post.content
+```

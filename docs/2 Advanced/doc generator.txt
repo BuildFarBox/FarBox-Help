@@ -1,0 +1,78 @@
+Title: Doc Generator for Humans
+url: doc-generator
+position: 2
+
+> We need a `Document Auto Generator` for humans which one can make us focus on writing. So we built one using FarBox template API, yeah, it's very cool!
+> help.farbox.com & doc.farbox.com are base on this generator template.
+
+
+## Samples for the document generator (snapshots)
+
+### This is  a folder structure of local computer.
+![doc-os](/_image/2014-06-08/doc-os.png)
+
+### This is a Web site base on the folder structure.
+![doc-web](/_image/2014-06-08/doc-web.png)
+
+### This is the PDF document base on the folder structure.
+
+![Image Title](/_image/2014-06-08/doc-pdf-1.png)
+
+![Image Title](/_image/2014-06-08/doc-pdf-2.png)
+
+
+## How to use this document auto generator?
+
+### Step1, understand the mechanism
+
+FarBox can turn a folder and the files it includes into a queryable database structure, so the Web site can use the template API to get the data you need. And `position` is a metadata of a post, that you can set by you self when editing a post; and `position` is also used to sort a post list.
+
+> In short, this `document auto generator` just a website customed by FarBox API.
+
+### Step2, user this template
+
+It's a easy job to clone a template in FarBox, just visiting [http://doc.farbox.com/template](http://doc.farbox.com/template), input your site domain, then your site will get the template!
+
+In fact, the source code is very simple too, you can fetch it and modify it, here is source [https://github.com/BuildFarBox/doc.farbox.com](https://github.com/BuildFarBox/doc.farbox.com)。
+
+Download [ZIP Package](https://github.com/BuildFarBox/doc.farbox.com/archive/master.zip), unzip it, move the diretory of `template` into a site folder of yours. Maybe you should also need to go to the site admin dashboard to set `Template Priority` to `Custom Template`.
+
+### Step3, understand the basic rules
+
+1. Document files should be in a directory named `docs`, the file `index.md` will be the homepage of this site;
+- The left sidebar is auto generated: subfolders of `docs` is subnavigation
+- If a document declared `toc: yes` in metadatas,  third-level navigation will be embedded into the left sidebar
+- Both directories and files should be named in this format `number+space+name`, like `1 name`, `2 name`.
+
+
+
+[Check here for more rules](https://github.com/BuildFarBox/doc.farbox.com/blob/master/readme.markdown), and all the ruels are controlled by the template that can be modified by yourself.
+
+
+## Obscure Features！
+
+### Pack folder into PDF
+
+You should download the desktop APP of FarBox [FarEditor](https://www.farbox.com/service/download-editor) first.
+
+Run FarEditor, then `View -> File Manager`, choose the `docs` direcotry,  right-click and you will see:
+
+![pack to pdf](/_image/2014-06-08/pack-to-pdf.png)
+
+Then following the tips to pack folder into PDF, and more documents, more time needed for packing.
+
+
+### Supports Multiple Languages
+
+The root folder is `docs` by default, if there is anaother root folder named `docs-zh_cn` or `docs-us_en`, then visiting a URL plus `?lang=zh_cn` or `?lang=us_en` will hit docs-zh_cn or docs-us_en, not `docs` any more.
+
+By default, different visitors match different root folder automatically, without modifying the URL.
+
+### Add Comments System
+
+Go to you site admin dashboard, and add the Diqsus ID, that's all.
+
+But it means to the visitors, they can give a comment to your some document, the feedbacks can help you to improve the documentation.
+
+
+

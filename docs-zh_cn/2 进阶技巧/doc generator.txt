@@ -1,0 +1,77 @@
+Title: 人性化的文档生成器
+url: doc-generator
+position: 2
+
+> 我们希望有一个更人性化的`文档自动生成器`，可以把最大的精力放在书写文档本身，而不是其它的地方。然后就用FarBox的API做了一个；嘿，效果还真不错！
+> help.farbox.com & doc.farbox.com都是在此基础上实现的。
+
+
+## 文档自动生成的效果（截图）
+
+### 这是电脑本地上的一个文件夹结构
+![doc-os](/_image/2014-06-08/doc-os.png)
+
+### 这是根据文件夹自动生成的Web网站
+![doc-web](/_image/2014-06-08/doc-web.png)
+
+### 这是根据文件夹自动导出的PDF文件
+
+![Image Title](/_image/2014-06-08/doc-pdf-1.png)
+
+![Image Title](/_image/2014-06-08/doc-pdf-2.png)
+
+
+## 如何使用这个文档自动生成器？
+
+### 第一步，了解它运行的机制
+
+FarBox可以将文件夹以及其包含的文件转为可查询的数据库结构，数据的查询可以通过模板API进行。FarBox上的日志，可以自己设定`position`字段，那么就能让所有的文档按照固定的次序排列。
+
+> 简而言之，这个`文档生成器`，实际上就是FarBox的一个网站自定义模板而已。
+
+### 第二步, 使用这个模板
+
+FarBox中可以轻松的克隆一个模板，你只需要访问[http://doc.farbox.com/template](http://doc.farbox.com/template)，然后填入自己的网站域名，就可以成功克隆这个`文档生成器`的模板了！
+
+实际上，模板的源码也非常简洁，如果有必要，可以获取源码，自行修改，地址为[https://github.com/BuildFarBox/doc.farbox.com](https://github.com/BuildFarBox/doc.farbox.com)。
+
+下载模板的[ZIP包](https://github.com/BuildFarBox/doc.farbox.com/archive/master.zip)解压后，将template目录移到自己的网站目录下就可以了；如果之前已经克隆过doc.farbox.com上的模板了，则需要在自己的网站管理后台中，将`模板引擎>模板优先级`设置为`自定义模板`优先。
+
+### 第三步，了解基本的使用规则
+
+
+1. 文档文件需要放在`docs`这个目录中，里面的`index.md`会是网站首页的内容；
+- 左侧导航自动生成: `docs`的子目录（如果有文档）会作为二级导航存在，子目录内的则是具体的文档文件。
+- 左侧导航中还有内嵌矛点的三级导航，这是当前文档声明了`toc: yes`而产生的。
+- 目录与文件，其名字需要用类似`1 name`，`2 name`进行命名，即`数字+空格+名字`的格式，数字即排序。
+
+[更多的使用规则](https://github.com/BuildFarBox/doc.farbox.com/blob/master/readme-cn.markdown)，这都是由模板本身决定的；如果有必要，你可以自己修改模板。
+
+
+## 隐藏特性！
+
+### 自动生成PDF
+
+你需要下载FarBox的桌面端程序[FarEditor](https://www.farbox.com/service/download-editor)
+
+运行FarEditor后，打开左侧的`文件管理器`，选择自己网站下的`docs`目录，点击右键，会有如下所示：
+![pack to pdf](/_image/2014-06-08/pack-to-pdf.png)
+
+然后按照操作提示进行下去即可，如果文档比较多，生成PDF的等待时间会比较长。
+
+### 支持多国语言
+
+默认的文档总目录为`docs`，如果另外还有`docs-zh_cn`或`docs-us_en`这样的目录，那么访问网址时，增加`?lang=zh_cn`或`?lang=us_en`就能匹配不同的文档总目录，而非原来的`docs`。
+
+默认情况下，则是根据访问者的国家，自动匹配的，比如国内的用户一般会先尝试去匹配`docs-zh_cn`这个总目录。
+
+### 添加评论
+
+只要进入自己网站的管理后台，添加Disqus或者多说的ID，就可以了。
+
+这样，读者遇到不明白的问题，在当前文档内就能进行留言/评论， 这样的反馈可以帮助我们更好地完善文档！
+
+
+
+
+

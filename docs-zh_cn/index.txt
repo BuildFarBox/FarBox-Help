@@ -1,0 +1,42 @@
+Date: 2014-06-09 00:28:26
+
+## 关于FarBox
+
+[English Version](/?lang=en)
+
+最开始，我们创建FarBox是为了下面两个目的：
+
+> 用博客记录生活的时候，希望回归于纯粹的写作。
+> 旅行归来，把照片放到电脑里，无需上传，大家就能在我的个人网站里看到。
+
+慢慢地，FarBox仿佛有了灵魂一般，有了各种可能性，毕竟：
+> Keep it simple is not just only simple.
+
+
+## 使用FarEditor
+
+虽然我们也提供Web端的Editor，但建议尽可能避免在Web（浏览器）端写作，这常会产生很多干扰。
+
+FarBox提供Mac/Win两种操作系统下的写作客户端[FarEditor](https://www.farbox.com/service/download-editor)，打开软件即可写作，甚至无需关注文件将保存于何处。
+
+除此之外，你还可以使用任何自己喜欢的软件进行书写，只要保存到网站文件夹内就可以了。
+
+> 初次安装提示错误的话，可能需要重启下Dropbox。
+
+## 下载Dropbox
+
+如果你从未使用过Dropbox，那么建议下载[Dropbox客户端](https://www.dropbox.com/)。
+
+你在FarBox上的数据，都会在Dropbox中有一个备份。
+你同步到Dropbox的数据，只要在FarBox目录内的，也会同步到你自己的网站中。
+
+
+## 使用FarBox的微信端
+对，你还可以使用微信写博客、发照片！
+
+如果你正在经历一次小的旅行，或者家里有个小宝初长成，你会爱上这种记录方式的！
+
+![Image Title](/_image/2014-06-09/weixin.png)
+
+
+

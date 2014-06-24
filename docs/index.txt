@@ -1,0 +1,31 @@
+Date: 2014-06-09 00:28:26
+
+## About FarBox
+
+[Chinese Version](/?lang=zh_cn)
+
+At the first, we create FarBox for two purposes:
+
+> Using blog to log life, and enjoy pure writing.
+> After travel, put photos into folder, then friends can visit my website see them without uploading.
+
+Slowly, FarBox had a soul and  various possibilities：
+> Keep it simple is not just only simple.
+
+## Use FarEditor
+
+Although we offer a Web-side Editor, avoid using it ifpossible, after all, Web-side always brings  disturb。
+
+[FarEditor](https://www.farbox.com/service/download-editor) supports Mac/Win, just open it, then writting, even no need to know where to save.
+
+Besides, you can use any writting APPs you like, by saving the document into your site folder.
+
+
+## Download Dropbox
+
+If you never used Dropbox before, you should download [Dropbox Client](https://www.dropbox.com/) and install it.
+
+The data under your FarBox's account, also has a backup in your Dropbox.
+The data (if under directory of FarBox) synced to Dropbox, will also synced to your website.
+
+

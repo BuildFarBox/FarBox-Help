@@ -1,0 +1,46 @@
+Date: 2014-06-12 15:54:30
+url: wiki-generator
+position: 1
+title: 制作个人Wiki模板
+
+## 个人Wiki
+有些时候，我们需要为自己的知识归类与总结，而Wiki就成了很好的工具。
+
+只是现实情况，搭建一个Wiki并不简单。使用起来，还总不是那么方便。
+
+如果，我们用在FarBox上写博客的体验，来管理自己的Wiki，那岂不是一件惬意的事情？！
+
+下面我们介绍用FarBox的模板API，寥寥十几行代码就完成了一个简单的个人Wiki。
+
+> 当然，有个前提，你的网站下面应该有一些文件夹，文件夹下面应该有些文档；不然模板是没有效果的。 :)
+
+
+## 源码
+
+为了比较清晰地反应模板代码（使用Jade语法），html/head/body这些HTML标签省略了，也没有引入样式(css/scss)文件。
+
+> index+category.jade，这样就能控制首页和`/category/<目录路径>`对应的URL。
+```jade:n
+if request.path == '/category/'
+	+redirect('/')
+entries = get_data(type='post', path=path2, limit=300).group('parent_raw_path')
+for parent_raw_path, posts in entries
+	if parent_raw_path
+		h2= parent_raw_path.split('/')[-1]
+	else
+		h2 Root
+	ul
+		for post in posts
+			li
+				a(href=post.url)= post.title
+```
+
+> post.jade
+
+```jade:n
+.nav
+	+bread_nav(post.raw_path.split('/')[1:].join('/'), prefix='/category/')
+.post
+	h1.title= post.title
+	.content= post.content
+```
