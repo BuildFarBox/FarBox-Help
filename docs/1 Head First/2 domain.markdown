@@ -9,7 +9,7 @@ You need to bind a domain in the site admin dashboard, ( the URL looks like http
 
 **If you used a domain as the name of your site folder, there is no need to setup again in the dashboard.**
 
-If you binded a subdomain of FarBox ( looks like `***.farbox.com` )[^subdomain], just visiting it (if it was not occupied by others). If the doamin is an independent one, you can visiting `yourdomain.com.park.farbox.net` to check if it works in FarBox side [^domain-in-farbox].
+If you binded a subdomain of FarBox ( looks like `***.farbox.com` )[^subdomain], just visiting it (if it was not occupied by others). If the domain is an independent one, you can visiting `yourdomain.com.park.farbox.net` to check if it works in FarBox side [^domain-in-farbox].
 
 
 
@@ -21,7 +21,7 @@ If you binded a subdomain of FarBox ( looks like `***.farbox.com` )[^subdomain],
 ### Option 1: Modify NameServer
 
 The is the simplest and recommended way, please set the Nameservers of your domain at your registrant to.
-`ns1.farbox.net` `ns2.farbox.net`（**There should be no other nameservers together, other ways it won't work!**）.
+`ns1.farbox.net` `ns2.farbox.net`（**There should be no other nameservers together, otherwise it won't work!**）.
 
 The image bellow, takes Godaddy.com as an example:
 
