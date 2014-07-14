@@ -17,6 +17,7 @@ If you binded a subdomain of FarBox ( looks like `***.farbox.com` )[^subdomain],
 ## Step 2, modify the DNS records of your independent domain
 
 > If the domain you binded is not an independent domain, or your domain was binded by modifying the NameServer, you can skip this step now.
+> The modification of DNS records, would become effective in minutes or longer, it depends on the DNS network of the world. Please  be patient.
 
 ### Option 1: Modify NameServer
 
@@ -28,6 +29,8 @@ The image bellow, takes Godaddy.com as an example:
 ![Image Title](/_image/2014-06-06/nameserver.png)
 
 You also can use `option 2` and `option 3` to modify your DNS records, but only if you knew how to set different types of DNS records.
+
+**Note: If you bind your domain in this way, there is no management for your other types of DNS records, like MX.**
 
 ### Option 2: Modify CNAME of DNS
 

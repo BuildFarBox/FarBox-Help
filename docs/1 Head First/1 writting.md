@@ -41,6 +41,7 @@ Date: 2012-10-25 12:22
 Title: I am a title
 Tags: tag1, tag2
 Status: draft
+URL： this-is-my-first-post
 
 this is text body...
 ```
@@ -49,6 +50,7 @@ this is text body...
 - Title is the title of post (if you don't like to use the filename by default)
 - Tags can set the tags of post
 - Status is the status of your post, default value (if not declared) is `public`. Usually, the post list of your site contains the posts whose status is `public`.
+- URL is the address of your post, if not necessary, do not customize it.
 
 > If you want to learn more about the properties/configs of a post, please check [>Configs of Post](http://doc.farbox.com/read/post-configs)
 

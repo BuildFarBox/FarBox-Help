@@ -1,0 +1,42 @@
+Title: Auto Image Enhance
+url: auto-image-enhance
+Date: 2014-07-07 21:25:14
+position: 0.1
+
+## Why design it!
+
+For most people, the photos we token in daily life, did not meat our imagination at most time. Maybe because of  environment or light, even  camara.
+
+FarBox wants to solve it by a natural design, without focusing on editing photos or filters, but we still can get a vivider image.
+
+After many adjustments on graphic algorithms, what we designed is really amazing for non-portraitures.
+
+> Design, should be invisible. This is our basic principle.
+
+## Effect Contrast
+
+### an orignal landscape
+![Image Title](/_image/2014-07-07/21-39-46.jpg)
+
+### this landscape auto-processed by FarBox
+![Image Title](/_image/2014-07-07/21-39-52.jpg)
+
+### an orignal photo of salmon
+![Image Title](/_image/2014-07-07/21-38-00.jpg)
+
+### this photo auto-processed by FarBox
+
+![Image Title](/_image/2014-07-07/21-37-20.jpg)
+
+
+
+## How to enable the image enhance?
+
+**Go to the admin dashboard of your site, and check the feature like below, then it will work.**
+
+![Vivider Image](/_image/2014-07-07/vivider-image.png)
+
+- - - - -
+
+> You also can add a GET parameter by yourself to the URL of a photo, `auto=true` means making it enabled, `auto=false` means disable.
+

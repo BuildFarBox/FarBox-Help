@@ -44,3 +44,9 @@ for parent_raw_path, posts in entries
 	h1.title= post.title
 	.content= post.content
 ```
+
+## 最后
+
+本文是需要对FarBox的自定义模板有一定程度的熟悉，才能比较快的上手。
+
+如果你不想自己定义模板，也可以参考[《人性化的文档生成器》](/read/doc-generator)，本站就是基于此生成的。

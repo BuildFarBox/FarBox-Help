@@ -46,3 +46,9 @@ for parent_raw_path, posts in entries
 	h1.title= post.title
 	.content= post.content
 ```
+
+## Last Words
+
+If you want to understand the idea of this article clearly, you should know something about customizing template in Farbox already.
+
+If you do not want to comtomize your own template, you also can check [Doc Generator for Humans](/read/doc-generator). And current site is created in this way.

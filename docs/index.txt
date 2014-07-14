@@ -1,5 +1,6 @@
 Date: 2014-06-09 00:28:26
 
+
 ## About FarBox
 
 [Chinese Version](/?lang=zh_cn)
@@ -10,7 +11,7 @@ At the first, we create FarBox for two purposes:
 > After travel, put photos into folder, then friends can visit my website see them without uploading.
 
 Slowly, FarBox had a soul and  various possibilities：
-> Keep it simple is not just only simple.
+> Keep it simple, then gain more.
 
 ## Use FarEditor
 
@@ -28,4 +29,11 @@ If you never used Dropbox before, you should download [Dropbox Client](https://w
 The data under your FarBox's account, also has a backup in your Dropbox.
 The data (if under directory of FarBox) synced to Dropbox, will also synced to your website.
 
+## Use FarBox in WeChat
+
+Yes! You can use WeChat to publish a post by messages and photos.
+
+If you are on a little tour, or have a little baby, you would love this way to record!
+
+![Image Title](/_image/2014-06-09/weixin.png)
 
